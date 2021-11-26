@@ -28,8 +28,7 @@ services:
         volumes:
             - "./dash/src:/src" 
         depends_on:
-            db:
-                condition: service_started
+            - db
         
     jupyter:
         container_name: jupyter_container
@@ -39,7 +38,6 @@ services:
         volumes:
             - "./jupyter/src:/src" 
         depends_on:
-            db:
-                condition: service_started
+            - db
         
         
