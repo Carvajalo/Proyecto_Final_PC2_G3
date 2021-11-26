@@ -25,16 +25,16 @@ Luego de que se haya de terminado de realizar el build de la imagen puede ingres
 
  
 ## Servicio DASH
-[localhost:8055](https://localhost:8055/)
+[localhost:8055](localhost:8055/)
 
 Allí puede visualizar diferentes gráficas del datasheet en el servidor DASH. 
 
 ## Jupyter
-[localhost:8888](https://localhost:8888/)
+[localhost:8888](localhost:8888/)
 
 Allí puede visualizar gráficos en el servidor Jupiter.
 
 ## *Servidor de base de datos (ADMINER)*
-[localhost:8080](https://localhost:8080/)
+[localhost:8080](localhost:8080/)
   
 Allí puede visualizar el datasheet utilizado.
