@@ -1,9 +1,16 @@
 # Proyecto final de Estructura del Computador ll 
 
+## Integrantes: 
+Orlando J. Meriño Carvajal - 200091757
+Jofrank S. Orozco Llanos - 200092839
+Nicolás Poveda Alvarado - 200110622
+Adriana Arango Mendoza - 200109610
+
+
 ## **Como ejecutar el proyecto**
   1. Ubicarse en el directorio en el que clonó la aplicación. 
 
-  2. Abrir la interfáz de comandos en esa directorio 
+  2. Abrir la interfáz de comandos en ese directorio 
 
   3. Ejecutar el comando:
        ```
@@ -18,12 +25,12 @@ Luego de que se haya de terminado de realizar el build de la imagen puede ingres
   
 Allí puede visualizar el datasheet utilizado. 
  
-## Servicio DASH 8055
+## Servicio DASH
 [localhost:8055](https://localhost:8055/)
 
 Allí puede visualizar diferentes gráficas del datasheet en el servidor DASH. 
 
-## Jupiter 8888
+## Jupyter
 [localhost:8888](https://localhost:8888/)
 
 Allí puede visualizar gráficos en el servidor Jupiter.
