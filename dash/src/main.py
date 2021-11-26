@@ -11,7 +11,7 @@ import numpy as np
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-connection = psycopg2.connect("dbname=postgres host=db user=postgres password=example")
+connection = psycopg2.connect("dbname=postgres host=db user=postgres password=postgres")
 server = app.server
 data = pd.read_sql_query('SELECT * FROM datos',connection)
 
@@ -66,6 +66,8 @@ fig4 = px.histogram(data, x="genero")
 
 app.layout = html.Div(children=[
     html.H1(children='Casos Covid-19 Colombia'),
+    html.Div(children='''Orlando Meriño, Jofrank Orozco, Nicolas Poveda, Adriana Arango
+    '''),
 
     html.H2(children='Número de casos por ciudad'),
     dcc.Graph(

@@ -1,18 +1,24 @@
-version: "2.1"
+version: "3"
 
 services:
     db:
         image: postgres
-        container_name: pg_container
+        container_name: postgres_container
         environment:
             POSTGRES_DB: postgres
             POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: example
+            POSTGRES_PASSWORD: postgres
         ports:
-            - 5433:5432
+            - 5432:5432
         volumes:
         - ./mysql/:/docker-entrypoint-initdb.d
-        
+    
+    adminer:
+        image: adminer
+        container_name: adminer_container
+        restart: always
+        ports:
+            - 8080:8080
 
     dash:
         container_name: dash_container
@@ -25,14 +31,11 @@ services:
             db:
                 condition: service_started
         
-
     jupyter:
         container_name: jupyter_container
         build: "./jupyter"
         ports:
             - 8888:8888
-        dns:
-            - 8.8.8.8
         volumes:
             - "./jupyter/src:/src" 
         depends_on:
