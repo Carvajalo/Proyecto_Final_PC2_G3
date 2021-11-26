@@ -29,6 +29,7 @@ Luego de que se haya de terminado de realizar el build de la imagen puede ingres
 
 Allí puede visualizar diferentes gráficas del datasheet en el servidor DASH. 
 
+
 ## Jupyter
 [localhost:8888](localhost:8888/)
 
@@ -38,3 +39,23 @@ Allí puede visualizar gráficos en el servidor Jupiter.
 [localhost:8080](localhost:8080/)
   
 Allí puede visualizar el datasheet utilizado.
+
+Si quiere visualizar el datasheet debe seguir los siguientes pasos: 
+
+1. Iniciar con el usuario y elegir la base de datos como se muestra a continuación: 
+
+![This is an image](https://github.com/Carvajalo/Proyecto_Final_PC2_G3/blob/main/img/Captura%201.PNG)
+
+2. Seleccionar la tabla de datos: 
+
+![This is an image](https://github.com/Carvajalo/Proyecto_Final_PC2_G3/blob/main/img/Captura%202.PNG)
+
+3. Dar click en "Visualizar contenido"
+
+![This is an image](https://github.com/Carvajalo/Proyecto_Final_PC2_G3/blob/main/img/Captura%203.PNG)
+
+4. Ajustar los valores que quiera visualizar en el datasheet en el campo "Limite" y reflejando los cambios en el botón **Mostrar**.
+
+![This is an image](https://github.com/Carvajalo/Proyecto_Final_PC2_G3/blob/main/img/Captura%204.PNG)
+
+
