@@ -2,8 +2,11 @@
 
 ## Integrantes: 
 Orlando J. Meriño Carvajal - 200091757
+
 Jofrank S. Orozco Llanos - 200092839
+
 Nicolás Poveda Alvarado - 200110622
+
 Adriana Arango Mendoza - 200109610
 
 
