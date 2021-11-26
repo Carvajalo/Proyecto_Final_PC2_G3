@@ -1,0 +1,42 @@
+version: "2.1"
+
+services:
+    db:
+        image: postgres
+        container_name: pg_container
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: example
+        ports:
+            - 5433:5432
+        volumes:
+        - ./mysql/:/docker-entrypoint-initdb.d
+        
+
+    dash:
+        container_name: dash_container
+        build: "./dash"      
+        ports:
+            - 8055:8055         
+        volumes:
+            - "./dash/src:/src" 
+        depends_on:
+            db:
+                condition: service_started
+        
+
+    jupyter:
+        container_name: jupyter_container
+        build: "./jupyter"
+        ports:
+            - 8888:8888
+        dns:
+            - 8.8.8.8
+        volumes:
+            - "./jupyter/src:/src" 
+        depends_on:
+            db:
+                condition: service_started
+        
+        

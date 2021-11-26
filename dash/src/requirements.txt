@@ -1,0 +1,8 @@
+dash
+pandas
+requests
+notebook
+jupyter-dash
+requests
+psycopg2-binary
+numpy
